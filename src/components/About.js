@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+import React from 'react'
 
 export default function About(props) {
 
@@ -10,7 +11,6 @@ export default function About(props) {
         color: props.mode === 'dark' ? 'white' : '#042743',
         backgroundColor: props.mode === 'dark' ? 'rgb(36 74 104)' : 'white',
     }
-    console.log(myStyle)
     return (
         <div className='container p-3' style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
             <h1 className="my-3">About Us</h1>

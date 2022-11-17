@@ -32,7 +32,7 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = ' #042743';
       showAlert('Dark mode has been enabled', 'success');
-      document.title = "Text utils - Dark mode";
+      // document.title = "Text utils - Dark mode";
 
       // trigerring the title just like the facebook
       // setInterval(() => {
@@ -46,16 +46,12 @@ function App() {
       setMode('light')
       document.body.style.backgroundColor = '#fff';
       showAlert('Light mode has been enabled', 'success')
-      document.title = "Text utils - Light mode";
+      // document.title = "Text utils - Light mode";
 
     }
   }
-
   return (
     <>
-      {/* <Navbar title="TextUtils2" aboutText="About TextUtils"/> */}
-      {/* <Navbar /> */}
-
       <Router>
         <Navbar title="TextUtils2" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
@@ -63,7 +59,7 @@ function App() {
         <div className="container my-3">
           <Routes>
             <Route exact path="/about" element={<About mode={mode} />} />
-            <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
+            <Route path="/" element={<TextForm showAlert={showAlert} heading="Try text utils - Word counter Character counter" mode={mode} />} />
           </Routes>
         </div>
       </Router>
